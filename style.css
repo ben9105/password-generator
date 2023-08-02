@@ -101,6 +101,10 @@ hr {
     -moz-box-shadow: 5px 6px 5px 0px rgba(49, 49, 49, 0.34);
 }
 
+.input-btn:active {
+    box-shadow: 0px 0px 3px 4px rgba(255,255,255, 0.3);
+}
+
 /* .input-btn:focus {
     outline: none;
 } */
