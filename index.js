@@ -23,5 +23,10 @@ function password() {
 }
 
 function clipboard() {
+    navigator.clipboard.writeText(passwordField.innerHTML).then(() => {
+        console.log('Content copied to clipboard');
+      },() => {
+        console.error('Failed to copy');
+      });
 
 }
