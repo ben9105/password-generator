@@ -84,7 +84,7 @@ input[type="range"]::-moz-range-thumb {
     border-radius: 1rem; /*Removes default border-radius that FF applies*/
  
     /*custom styles*/
-    background-color: #5cd5eb;
+    background-color: #83c5be;
     height: 1rem;
     width: 1rem;
  }
