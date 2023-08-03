@@ -2,23 +2,27 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 const passwordField = document.getElementById('password-field')
 const clipboardButton = document.getElementById('clipboard-btn')
+const passwordSlider = document.getElementById('password-slider')
+
+console.log(passwordSlider.value);
 
 const clearPassword = () => {
     passwordField.innerHTML = ''
 }
 
+const passwordSet = () => {
+    for (let i = 0; i < passwordSlider.value; i++) {
+        let randomChar = (Math.floor(Math.random() * characters.length))
+        passwordField.innerHTML += characters[randomChar]
+    }
+}
+
 function password() {
     if (passwordField.value = '') {
-        for (let i = 0; i < 15; i++) {
-            let randomChar = (Math.floor(Math.random() * characters.length))
-            passwordField.innerHTML += characters[randomChar]
-        }
+        passwordSet()
     } else {
         clearPassword()
-        for (let i = 0; i < 15; i++) {
-            let randomChar = (Math.floor(Math.random() * characters.length))
-            passwordField.innerHTML += characters[randomChar]
-        }
+        passwordSet()
     }
 }
 
