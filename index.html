@@ -22,7 +22,7 @@
 
         <div>
           <p class="slider-text" >Choose your password length. <span id="rangeValue">15</span></p> 
-          <input type="range" name="slider" oninput="rangeValue.innerText = this.value" min="5" max="30" value="15" class="slider" id="password-slider">
+          <input type="range" name="slider" autocomplete="off" oninput="rangeValue.innerText = this.value" min="5" max="30" value="15" class="slider" id="password-slider">
         </div>
 
         <button id="generate-btn" onclick="password()">Generate Password</button>
